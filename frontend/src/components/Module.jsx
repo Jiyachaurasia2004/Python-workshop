@@ -107,9 +107,12 @@ const Module = () => {
               APIs, and Data Science.
             </p>
 
-            <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:scale-105 transition flex items-center gap-2">
+            <a
+              href="#contact"
+              className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:scale-105 transition flex items-center gap-2 max-w-max"
+            >
               🚀 Start Learning Python
-            </button>
+            </a>
 
             <p className="text-sm text-gray-500 mt-4">
               Limited seats available • Start your Python career today

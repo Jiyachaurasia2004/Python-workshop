@@ -23,7 +23,7 @@ const Hero = () => {
       {/* 🔥 Badge */}
       <div className="mb-6">
         <span className="px-6 py-2 rounded-full text-white text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-500 shadow-md animate-pulse">
-          🚀 Python Developer Roadmap Workshop
+          🚀Data Science Workshop
         </span>
       </div>
 
@@ -36,7 +36,7 @@ const Hero = () => {
       </h1>
 
       <h2 className="text-3xl md:text-5xl font-bold text-blue-600 mt-3">
-        Roadmap Workshop
+         Workshop
       </h2>
 
       {/* 🔥 Subtitle */}

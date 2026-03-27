@@ -202,37 +202,41 @@ const RegisterSection = () => {
         </div>
 
         {/* RIGHT - HIGHLIGHTS */}
-        <div className="bg-white rounded-2xl border border-blue-200 p-8 shadow-sm">
+        <div className="bg-white rounded-2xl border border-blue-200 p-8 shadow-sm flex flex-col h-full">
 
           <h2 className="text-2xl font-bold text-blue-700 mb-6 flex items-center gap-2">
             ✨ Workshop Highlights
           </h2>
+ 
+          <div className="flex flex-col flex-grow gap-6">
 
-          <div className="space-y-4">
-
-            <div className="border border-green-300 bg-green-50 p-4 rounded-xl">
-              <h4 className="font-semibold">🎯 Live Session</h4>
+            <div className="border border-green-300 bg-green-50 p-5 rounded-xl flex-grow">
+              <span className="text-2xl mb-1 block">🎯</span>
+              <h4 className="font-semibold text-lg">Live Session</h4>
               <p className="text-sm text-gray-600">
                 2-hour interactive with experts
               </p>
             </div>
 
-            <div className="border border-blue-300 bg-blue-50 p-4 rounded-xl">
-              <h4 className="font-semibold">👨‍🏫 Expert Mentors</h4>
+            <div className="border border-blue-300 bg-blue-50 p-5 rounded-xl flex-grow">
+              <span className="text-2xl mb-1 block">👨‍🏫</span>
+              <h4 className="font-semibold text-lg">Expert Mentors</h4>
               <p className="text-sm text-gray-600">
                 Learn from professionals
               </p>
             </div>
 
-            <div className="border border-blue-300 bg-blue-50 p-4 rounded-xl">
-              <h4 className="font-semibold">📘 Full Stack Roadmap</h4>
+            <div className="border border-blue-300 bg-blue-50 p-5 rounded-xl flex-grow">
+              <span className="text-2xl mb-1 block">📘</span>
+              <h4 className="font-semibold text-lg">Full Stack Roadmap</h4>
               <p className="text-sm text-gray-600">
                 Complete learning path
               </p>
             </div>
 
-            <div className="border border-purple-300 bg-purple-50 p-4 rounded-xl">
-              <h4 className="font-semibold">💼 Real Projects</h4>
+            <div className="border border-purple-300 bg-purple-50 p-5 rounded-xl flex-grow">
+              <span className="text-2xl mb-1 block">💼</span>
+              <h4 className="font-semibold text-lg">Real Projects</h4>
               <p className="text-sm text-gray-600">
                 Industry project insights
               </p>

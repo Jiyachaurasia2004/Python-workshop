@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import logo from "../assets/logo-bean.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,12 +56,11 @@ const Navbar = () => {
         
         {/* 🔥 Logo */}
         <div className="flex items-center gap-3 cursor-pointer">
-          <img
-            src="/src/assets/logo-bean.png"
-            alt="BeanGate"
-            className="h-12 md:h-14 object-contain"
-          />
-
+         <img
+  src={logo}
+  alt="BeanGate"
+  className="h-12 md:h-14 object-contain"
+/>
        
         </div>
 
