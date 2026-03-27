@@ -21,7 +21,7 @@ const RegisterSection = () => {
     setStatus("loading");
 
     try {
-      const response = await fetch("https://python-workshop-backend.onrender.com/api/contact", {
+      const response = await fetch("https://python-backend-gl8n.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -228,7 +228,7 @@ const RegisterSection = () => {
 
             <div className="border border-blue-300 bg-blue-50 p-5 rounded-xl flex-grow">
               <span className="text-2xl mb-1 block">📘</span>
-              <h4 className="font-semibold text-lg">Full Stack Roadmap</h4>
+              <h4 className="font-semibold text-lg">Data Science Roadmap</h4>
               <p className="text-sm text-gray-600">
                 Complete learning path
               </p>
