@@ -5,19 +5,19 @@ const Companies = () => {
   const [pauseRow2, setPauseRow2] = useState(false);
 
   const companies = [
-    { name: "American Express", logo: "https://logo.clearbit.com/americanexpress.com", color: "from-green-400 to-green-600" },
-    { name: "Accenture", logo: "https://logo.clearbit.com/accenture.com", color: "from-pink-400 to-purple-500" },
-    { name: "Deloitte", logo: "https://logo.clearbit.com/deloitte.com", color: "from-green-500 to-green-700" },
-    { name: "WNS", logo: "https://logo.clearbit.com/wns.com", color: "from-blue-400 to-purple-500" },
-    { name: "SBI", logo: "https://logo.clearbit.com/sbi.co.in", color: "from-blue-500 to-indigo-500" },
-    { name: "Deccan Herald", logo: "https://logo.clearbit.com/deccanherald.com", color: "from-red-400 to-pink-500" },
-    { name: "Intellect", logo: "https://logo.clearbit.com/intellectdesign.com", color: "from-purple-400 to-indigo-500" },
-    { name: "HCL", logo: "https://logo.clearbit.com/hcltech.com", color: "from-red-400 to-red-600" },
-    { name: "TATA", logo: "https://logo.clearbit.com/tata.com", color: "from-blue-500 to-blue-700" },
-    { name: "Reebok", logo: "https://logo.clearbit.com/reebok.com", color: "from-red-500 to-red-700" },
-    { name: "Google", logo: "https://logo.clearbit.com/google.com", color: "from-yellow-400 to-orange-500" },
-    { name: "IBM", logo: "https://logo.clearbit.com/ibm.com", color: "from-blue-600 to-blue-800" },
-    { name: "Cipla", logo: "https://logo.clearbit.com/cipla.com", color: "from-blue-400 to-blue-600" },
+    { name: "American Express", logo: "https://www.google.com/s2/favicons?domain=americanexpress.com&sz=128", color: "from-green-400 to-green-600" },
+    { name: "Accenture", logo: "https://www.google.com/s2/favicons?domain=accenture.com&sz=128", color: "from-pink-400 to-purple-500" },
+    { name: "Deloitte", logo: "https://www.google.com/s2/favicons?domain=deloitte.com&sz=128", color: "from-green-500 to-green-700" },
+    { name: "WNS", logo: "https://www.google.com/s2/favicons?domain=wns.com&sz=128", color: "from-blue-400 to-purple-500" },
+    { name: "SBI", logo: "https://www.google.com/s2/favicons?domain=sbi.co.in&sz=128", color: "from-blue-500 to-indigo-500" },
+    { name: "Deccan Herald", logo: "https://www.google.com/s2/favicons?domain=deccanherald.com&sz=128", color: "from-red-400 to-pink-500" },
+    { name: "Intellect", logo: "https://www.google.com/s2/favicons?domain=intellectdesign.com&sz=128", color: "from-purple-400 to-indigo-500" },
+    { name: "HCL", logo: "https://www.google.com/s2/favicons?domain=hcltech.com&sz=128", color: "from-red-400 to-red-600" },
+    { name: "TATA", logo: "https://www.google.com/s2/favicons?domain=tata.com&sz=128", color: "from-blue-500 to-blue-700" },
+    { name: "Reebok", logo: "https://www.google.com/s2/favicons?domain=reebok.com&sz=128", color: "from-red-500 to-red-700" },
+    { name: "Google", logo: "https://www.google.com/s2/favicons?domain=google.com&sz=128", color: "from-yellow-400 to-orange-500" },
+    { name: "IBM", logo: "https://www.google.com/s2/favicons?domain=ibm.com&sz=128", color: "from-blue-600 to-blue-800" },
+    { name: "Cipla", logo: "https://www.google.com/s2/favicons?domain=cipla.com&sz=128", color: "from-blue-400 to-blue-600" },
   ];
 
   const firstRow = companies.slice(0, Math.ceil(companies.length / 2));
