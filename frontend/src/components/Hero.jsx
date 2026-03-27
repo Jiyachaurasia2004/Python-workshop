@@ -29,9 +29,9 @@ const Hero = () => {
 
       {/* 🔥 Heading */}
       <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-        Become a{" "}
+        AI Powered{" "}
         <span className="bg-gradient-to-r from-yellow-400 to-blue-600 bg-clip-text text-transparent">
-          Python Developer
+          Data Science
         </span>
       </h1>
 
@@ -44,14 +44,13 @@ const Hero = () => {
         Master Python from fundamentals to advanced backend development. Build real-world projects using Django, APIs, and cloud deployment.
       </p>
 
-      {/* 🔥 CTA Buttons */}
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
-        <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition">
+        <a
+          href="#contact"
+          className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition inline-block text-center"
+        >
           Join Workshop
-        </button>
-        <button className="border border-blue-200 text-blue-700 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition">
-          View Syllabus
-        </button>
+        </a>
       </div>
 
       {/* 🔥 Tech Stack Cards */}

@@ -44,43 +44,7 @@ function App() {
   </div>
 </section>
 
-     <section id="workshop-projects-section" className="py-24 bg-[#eaf4f8]">
-  <div className="max-w-6xl mx-auto px-6 text-center">
-
-    {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-extrabold text-indigo-950 mb-4">
-      Hands-on <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-green-600">Projects</span>
-    </h2>
-    <p className="text-gray-600 mb-12 text-lg md:text-xl">
-      Real-world applications you will build during the workshop.
-    </p>
-
-    {/* Projects Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      {['E-Commerce Suite', 'Social Media API', 'Banking System'].map((project, i) => (
-        <div
-          key={i}
-          className="p-8 rounded-3xl glass border border-white/20 shadow-2xl backdrop-blur-md hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500 text-left"
-        >
-          {/* Number Circle */}
-          <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center text-green-600 mb-6 font-bold text-lg md:text-xl group-hover:from-green-500 group-hover:to-green-600 group-hover:text-white transition-all duration-500">
-            {`0${i+1}`}
-          </div>
-
-          {/* Project Title */}
-          <h4 className="text-xl md:text-2xl font-bold text-indigo-950 mb-3 group-hover:text-green-600 transition-colors duration-300">
-            {project}
-          </h4>
-
-          {/* Description */}
-          <p className="text-gray-700 text-sm md:text-base leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
-            Full-featured application using <span className="font-semibold text-green-600">React, Spring Boot, and PostgreSQL</span>.
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+  
       </main>
        <FAQ/>
        <RegisterSection/>

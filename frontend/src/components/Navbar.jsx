@@ -29,12 +29,7 @@ const Navbar = () => {
         <path d="M12 20V10M18 20V4M6 20v-4"/>
       </svg>
     ),
-    Projects: (
-      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <polyline points="16 18 22 12 16 6"/>
-        <polyline points="8 6 2 12 8 18"/>
-      </svg>
-    ),
+   
     Placement: (
       <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <rect x="2" y="7" width="20" height="14" rx="2"/>
@@ -47,7 +42,7 @@ const Navbar = () => {
     { name: "Home", id: "home" },
     { name: "Details", id: "details" },
     { name: "Modules", id: "modules" },
-    { name: "Projects", id: "projects" },
+   
     { name: "Placement", id: "placement" },
   ];
 
