@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPython, FaDatabase } from "react-icons/fa";
 import { SiDjango, SiFastapi, SiTensorflow } from "react-icons/si";
-
+import imge from "../assets/data.jpeg"
 const Module = () => {
   const sections = [
     {
@@ -39,13 +39,13 @@ const Module = () => {
       {/* Top Badge */}
       <div className="flex justify-center mb-6">
         <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
-          ● COVERED IN THE PYTHON ROADMAP
+          ● COVERED IN THE Data Science & Data Analysis ROADMAP
         </span>
       </div>
 
       {/* Heading */}
       <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
-        Everything You Need to Master Python
+        Everything You Need to Master Data Science & Data Analysis
       </h1>
 
       <p className="text-center text-gray-600 mb-10">
@@ -56,7 +56,7 @@ const Module = () => {
       {/* Subheading */}
       <div className="flex justify-between items-center mb-6 max-w-6xl mx-auto">
         <h2 className="text-xl font-semibold text-gray-800">
-          Complete Python Roadmap
+          Complete Data Science Roadmap
         </h2>
 
         <span className="border border-blue-300 text-blue-600 px-4 py-1 rounded-full text-sm">
@@ -120,11 +120,11 @@ const Module = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+              src={imge}
               alt="Python Illustration"
-              className="w-60 md:w-72 drop-shadow-lg"
+              className="w-60 md:w-72 drop-shadow-lg rounded"
             />
           </div>
 

@@ -16,37 +16,41 @@ const RegisterSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // ✅ FIXED SUBMIT FUNCTION
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("loading");
 
     try {
-      const response = await fetch("https://python-backend-gl8n.onrender.com/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
+      const formBody = new URLSearchParams(formData).toString();
+
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbxuXVKvNpupT_ks-2QdxEk3ppqpLg0M1ksS37g4HDt-g35kmh_sfm8LJXu3W3dzM2G9/exec",
+        {
+          method: "POST",
+          mode: "no-cors", // 🔥 IMPORTANT FIX
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: formBody,
+        }
+      );
+
+      // ✅ Direct success (Google Script response read nahi hota)
+      setStatus("success");
+
+      // reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        qualification: "",
+        semester: "",
+        college: "",
       });
 
-      if (response.ok) {
-        setStatus("success");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          qualification: "",
-          semester: "",
-          college: "",
-        });
-      } else {
-        const errorData = await response.json().catch(() => ({}));
-        console.error("Server Error:", errorData);
-        setStatus("error");
-      }
     } catch (err) {
-      console.error("Fetch Error:", err);
+      console.error("Error:", err);
       setStatus("error");
     }
   };
@@ -61,21 +65,22 @@ const RegisterSection = () => {
           <h2 className="text-2xl font-bold text-blue-700 mb-2 flex items-center gap-2">
             📘 Register for Workshop
           </h2>
+
           <p className="text-gray-500 text-sm mb-6">
             Fill in your details to secure your spot
           </p>
 
           {/* Success Message */}
           {status === "success" && (
-            <div className="mb-6 p-4 bg-green-50 border border-green-300 rounded-xl text-green-700 text-sm font-medium flex items-center gap-2">
-              ✅ Registration successful! We've sent a confirmation to your email.
+            <div className="mb-6 p-4 bg-green-50 border border-green-300 rounded-xl text-green-700 text-sm font-medium">
+              ✅ Registration successful!
             </div>
           )}
 
           {/* Error Message */}
           {status === "error" && (
-            <div className="mb-6 p-4 bg-red-50 border border-red-300 rounded-xl text-red-700 text-sm font-medium flex items-center gap-2">
-              ❌ Something went wrong. Please try again or contact us directly.
+            <div className="mb-6 p-4 bg-red-50 border border-red-300 rounded-xl text-red-700 text-sm font-medium">
+              ❌ Something went wrong. Please try again.
             </div>
           )}
 
@@ -122,6 +127,7 @@ const RegisterSection = () => {
 
             {/* Row */}
             <div className="grid grid-cols-2 gap-4">
+
               <div>
                 <label className="text-sm font-medium">Qualification *</label>
                 <select
@@ -158,12 +164,11 @@ const RegisterSection = () => {
                   <option>Working</option>
                 </select>
               </div>
+
             </div>
 
             <div>
-              <label className="text-sm font-medium">
-                College/University *
-              </label>
+              <label className="text-sm font-medium">College/University *</label>
               <input
                 type="text"
                 name="college"
@@ -179,19 +184,9 @@ const RegisterSection = () => {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-green-500 hover:bg-green-600 disabled:bg-green-300 text-white py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors duration-200"
+              className="w-full bg-green-500 hover:bg-green-600 disabled:bg-green-300 text-white py-3 rounded-lg font-semibold"
             >
-              {status === "loading" ? (
-                <>
-                  <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
-                  </svg>
-                  Sending...
-                </>
-              ) : (
-                <>🎯 Register Now →</>
-              )}
+              {status === "loading" ? "Sending..." : "🎯 Register Now →"}
             </button>
 
             <p className="text-xs text-gray-400 text-center mt-2">
@@ -252,3 +247,5 @@ const RegisterSection = () => {
 };
 
 export default RegisterSection;
+
+

@@ -35,11 +35,11 @@ function App() {
     {/* Content Card */}
     <div className="max-w-4xl mx-auto glass p-12 rounded-3xl border border-white/20 shadow-2xl backdrop-blur-md hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3">
 <p className="text-gray-700 leading-relaxed text-lg md:text-xl">
-  This workshop is a <span className="text-green-600 font-semibold">hands-on experience</span> 
-  where you will learn by building real-world projects in <span className="text-green-600 font-semibold">Python</span>. 
+  This workshop is a <span className="text-green-600 font-semibold">hands-on experience </span> 
+  where you will learn by building real-world projects in <span className="text-green-600 font-semibold">Python</span> of Data Science. 
   From day one, we emphasize <span className="text-green-600 font-semibold">industry best practices</span>, 
   clean code, and modern Python architecture patterns. 
-  You will not just learn Python syntax; you will learn how to become a <span className="text-green-600">professional Python Software Engineer</span>, 
+  You will not just learn Python syntax; you will learn how to become a <span className="text-green-600">professional Data Science</span>, 
   writing maintainable, efficient, and production-ready code.
 </p>
     </div>
