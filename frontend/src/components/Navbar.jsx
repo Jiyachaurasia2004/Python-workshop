@@ -43,7 +43,13 @@ const Navbar = () => {
     ),
   };
 
-  const navLinks = ["Home", "Details", "Modules", "Projects", "Placement"];
+  const navLinks = [
+    { name: "Home", id: "home" },
+    { name: "Details", id: "details" },
+    { name: "Modules", id: "modules" },
+    { name: "Projects", id: "projects" },
+    { name: "Placement", id: "placement" },
+  ];
 
   return (
     <nav
@@ -69,20 +75,22 @@ const Navbar = () => {
           {navLinks.map((item, i) => (
             <a
               key={i}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item.id}`}
               className="flex items-center gap-2 text-gray-700 font-medium hover:text-blue-600  transition"
             >
-              <span className="text-blue-500">{icons[item]}</span>
-              {item}
+              <span className="text-blue-500">{icons[item.name]}</span>
+              {item.name}
             </a>
           ))}
         </div>
 
-        {/* 🔥 Button */}
         <div className="hidden md:block">
-          <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:shadow-md hover:scale-105 transition">
+          <a
+            href="#contact"
+            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:shadow-md hover:scale-105 transition inline-block text-center"
+          >
             Register Now
-          </button>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -106,18 +114,22 @@ const Navbar = () => {
           {navLinks.map((item, i) => (
             <a
               key={i}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item.id}`}
               onClick={() => setIsMenuOpen(false)}
               className="flex items-center gap-2 text-gray-700 font-medium hover:text-blue-600"
             >
-              <span className="text-blue-500">{icons[item]}</span>
-              {item}
+              <span className="text-blue-500">{icons[item.name]}</span>
+              {item.name}
             </a>
           ))}
 
-          <button className="bg-blue-600 text-white py-2 rounded-lg font-semibold">
+          <a
+            href="#contact"
+            onClick={() => setIsMenuOpen(false)}
+            className="bg-blue-600 text-white py-2 rounded-lg font-semibold text-center"
+          >
             Register Now
-          </button>
+          </a>
         </div>
       </div>
     </nav>

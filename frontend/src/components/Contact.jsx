@@ -52,7 +52,7 @@ const RegisterSection = () => {
   };
 
   return (
-    <section className="bg-[#eaf4f8] py-16 px-4">
+    <section id="contact" className="bg-[#eaf4f8] py-16 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
 
         {/* LEFT - FORM */}

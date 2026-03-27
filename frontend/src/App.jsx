@@ -24,7 +24,7 @@ function App() {
         <TechGrid />
        
         
-      <section id="details" className="py-24 bg-[#eaf4f8]">
+      <section id="workshop-details-section" className="py-24 bg-[#eaf4f8]">
   <div className="max-w-6xl mx-auto px-6 text-center">
     
     {/* Heading */}
@@ -44,7 +44,7 @@ function App() {
   </div>
 </section>
 
-     <section id="projects" className="py-24 bg-[#eaf4f8]">
+     <section id="workshop-projects-section" className="py-24 bg-[#eaf4f8]">
   <div className="max-w-6xl mx-auto px-6 text-center">
 
     {/* Heading */}

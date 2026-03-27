@@ -14,7 +14,7 @@ const techStack = [
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-blue-50 via-white to-indigo-100 overflow-hidden">
+    <section id="home" className="relative pt-32 pb-20 min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-blue-50 via-white to-indigo-100 overflow-hidden">
 
       {/* 🔥 Background Glow */}
       <div className="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] bg-blue-300/30 blur-[120px] rounded-full"></div>

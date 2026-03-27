@@ -11,7 +11,7 @@ const Details = () => {
   ];
 
   return (
-    <div className="bg-[#eef6fb] py-12 px-6 rounded-xl max-w-5xl mx-auto">
+    <div id="details" className="bg-[#eef6fb] py-12 px-6 rounded-xl max-w-5xl mx-auto">
       
       {/* Title */}
       <div className="flex items-center justify-center mb-10">

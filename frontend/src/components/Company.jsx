@@ -26,7 +26,7 @@ const Companies = () => {
   const loopRow = (row) => [...row, ...row];
 
   return (
-    <div className="bg-[#eaf4f8] py-16 px-6 overflow-hidden">
+    <div id="placement" className="bg-[#eaf4f8] py-16 px-6 overflow-hidden">
 
       {/* Centered Content Wrapper */}
       <div className="max-w-6xl mx-auto">

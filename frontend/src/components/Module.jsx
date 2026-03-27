@@ -35,7 +35,7 @@ const Module = () => {
   ];
 
   return (
-    <div className="bg-[#eef6fb] py-16 px-6">
+    <div id="modules" className="bg-[#eef6fb] py-16 px-6">
       {/* Top Badge */}
       <div className="flex justify-center mb-6">
         <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">

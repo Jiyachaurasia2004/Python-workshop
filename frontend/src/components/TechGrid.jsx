@@ -35,7 +35,7 @@ const TechGrid = () => {
   ];
 
   return (
-    <section id="modules" className="py-24 bg-[#eaf4f8]">
+    <section id="projects" className="py-24 bg-[#eaf4f8]">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
