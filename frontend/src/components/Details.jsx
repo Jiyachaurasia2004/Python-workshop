@@ -7,7 +7,7 @@ const Details = () => {
     "Non-IT students switching to Python career",
     "Anyone confused about Python roadmap & career path",
     "People interested in Data Science / AI with Python",
-    "Developers who want to learn Backend using Python",
+    "Aspiring professionals who want to become Data Scientists using Python.",
   ];
 
   return (
@@ -17,7 +17,7 @@ const Details = () => {
       <div className="flex items-center justify-center mb-10">
         <div className="w-5 h-5 bg-blue-600 mr-3"></div>
         <h2 className="text-2xl md:text-3xl font-bold text-blue-700">
-          Who Should Learn Python?
+          Who Should Learn Data Science?
         </h2>
       </div>
 

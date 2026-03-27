@@ -39,7 +39,7 @@ const Module = () => {
       {/* Top Badge */}
       <div className="flex justify-center mb-6">
         <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
-          ● COVERED IN THE Data Science & Data Analysis ROADMAP
+          ● COVERED IN THE DATA SCIENCE ROADMAP
         </span>
       </div>
 
@@ -49,8 +49,7 @@ const Module = () => {
       </h1>
 
       <p className="text-center text-gray-600 mb-10">
-        Complete roadmap from basics to advanced Python including backend,
-        frameworks, and data science tools.
+       Complete roadmap from basics to advanced Python, including data analysis, machine learning, visualization, and real-world data science tools.
       </p>
 
       {/* Subheading */}
@@ -98,20 +97,18 @@ const Module = () => {
           {/* LEFT CONTENT */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              Ready to Start Your Python Journey?
+             Ready to Start Your Data Science Journey?
             </h2>
 
             <p className="text-gray-600 mb-6">
-              Join our complete Python roadmap and build strong fundamentals
-              from basics to advanced topics like backend development,
-              APIs, and Data Science.
+             Join our complete Python and Data Science roadmap and build strong fundamentals from basics to advanced topics like data analysis, machine learning, visualization, and real-world data science projects.
             </p>
 
             <a
               href="#contact"
               className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:scale-105 transition flex items-center gap-2 max-w-max"
             >
-              🚀 Start Learning Python
+              🚀 Start Data Science with Python
             </a>
 
             <p className="text-sm text-gray-500 mt-4">

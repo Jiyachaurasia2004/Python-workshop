@@ -53,7 +53,7 @@ const Hero = () => {
 
       {/* Subtitle */}
       <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-2xl leading-relaxed">
-        Master Python from fundamentals to advanced backend development. Build real-world projects using Django, APIs, and cloud deployment.
+        Master Data Science and Analytics from fundamentals to advanced techniques. Build real-world projects using Python, SQL, Machine Learning, and Data Visualization.
       </p>
 
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
