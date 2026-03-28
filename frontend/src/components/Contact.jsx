@@ -25,7 +25,7 @@ const RegisterSection = () => {
       const formBody = new URLSearchParams(formData).toString();
 
       await fetch(
-        "https://script.google.com/macros/s/AKfycbxuXVKvNpupT_ks-2QdxEk3ppqpLg0M1ksS37g4HDt-g35kmh_sfm8LJXu3W3dzM2G9/exec",
+        "https://script.google.com/macros/s/AKfycbw0ZQOiJ9KhWeTIQqa6xd_Rrhc-7axNnWTkxdzl0-WJi1z49lqAwD0CcAYamYzQ3rY/exec",
         {
           method: "POST",
           mode: "no-cors", // 🔥 IMPORTANT FIX
