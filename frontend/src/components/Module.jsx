@@ -2,6 +2,7 @@ import React from "react";
 import { FaPython, FaDatabase, FaChartBar } from "react-icons/fa";
 import { SiScikitlearn } from "react-icons/si";
 import imge from "../assets/data.jpeg";
+import machine from "../assets/data.jpeg"; // Image for Machine Learning card
 
 const Module = () => {
   const sections = [
@@ -53,12 +54,12 @@ const Module = () => {
     },
     {
       title: "Machine Learning",
-      icon: <FaDatabase className="text-purple-500 text-2xl" />,
+      img: machine, // Image instead of icon
       border: "border-purple-500",
       bg: "bg-purple-50",
       items: [
-        "Supervised Machine Learning",
-        "Unsupervised Machine Learning",
+        "Supervised",
+        "Unsupervised",
         "Reinforcement Learning",
         "Evaluation Metrics",
         "Hyperparameter Tuning",
@@ -91,12 +92,19 @@ const Module = () => {
             key={index}
             className={`${sec.bg} border-2 ${sec.border} rounded-xl p-6 text-center hover:shadow-lg transition`}
           >
+            {/* Icon or Image */}
             <div className="bg-white w-14 h-14 flex items-center justify-center rounded-xl mx-auto mb-4 shadow">
-              {sec.icon}
+              {sec.img ? (
+                <img src={sec.img} alt={sec.title} className="w-10 h-10 object-contain" />
+              ) : (
+                sec.icon
+              )}
             </div>
 
+            {/* Title */}
             <h3 className="font-semibold text-lg mb-4">{sec.title}</h3>
 
+            {/* Items */}
             <div className="flex flex-wrap justify-center gap-2">
               {sec.items.map((item, i) => (
                 <span

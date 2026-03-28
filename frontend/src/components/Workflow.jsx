@@ -1,11 +1,10 @@
 import React from "react";
-import {
-  ClipboardDocumentIcon,
-  BuildingOffice2Icon,
-  Cog6ToothIcon,
-  PaintBrushIcon,
-  RocketLaunchIcon,
-} from "@heroicons/react/24/solid";
+import pythonImg from "../assets/python.jpeg";
+import pandasImg from "../assets/anlysis.png";
+import databaseImg from "../assets/database.png";
+import powerbiImg from "../assets/dataanlysis.avif";
+import sklearnImg from "../assets/machine-learning-logo-design-vector-illustrations-brain-ai-technology-human-template-2D6FW17.jpg";
+import successImg from "../assets/success-logo-design-template-vector.jpg";
 
 const steps = [
   {
@@ -14,7 +13,7 @@ const steps = [
     duration: "5-6 weeks",
     description:
       "Learn Python basics (loops, functions, OOP), focus on logic building, and practice 300+ problems",
-    icon: ClipboardDocumentIcon,
+    img: pythonImg,
   },
   {
     id: 2,
@@ -22,7 +21,7 @@ const steps = [
     duration: "3-4 weeks",
     description:
       "Work with NumPy, Pandas, Matplotlib, and Seaborn for data manipulation and visualization. Practice with CSV/Excel datasets and build 5+ projects",
-    icon: BuildingOffice2Icon,
+    img: pandasImg,
   },
   {
     id: 3,
@@ -30,7 +29,7 @@ const steps = [
     duration: "4-5 weeks",
     description:
       "Learn SQL (SELECT, JOIN, GROUP BY) and MongoDB (NoSQL basics). Understand data storage and retrieval concepts",
-    icon: Cog6ToothIcon,
+    img: databaseImg,
   },
   {
     id: 4,
@@ -38,7 +37,7 @@ const steps = [
     duration: "5-6 weeks",
     description:
       "Use Power BI (dashboards, DAX, 5+ projects) and Advanced Excel (pivot tables, charts, formulas) for analysis",
-    icon: PaintBrushIcon,
+    img: powerbiImg,
   },
   {
     id: 5,
@@ -46,7 +45,7 @@ const steps = [
     duration: "5-6 weeks",
     description:
       "Learn supervised and unsupervised learning using Scikit-learn. Cover regression, classification, clustering, and model evaluation (Accuracy, MSE). Build 5+ projects",
-    icon: RocketLaunchIcon,
+    img: sklearnImg,
   },
   {
     id: 6,
@@ -54,7 +53,7 @@ const steps = [
     duration: "—",
     description:
       "Achieve end-to-end understanding of data science. Ability to analyze data, build ML models, and create dashboards",
-    icon: ClipboardDocumentIcon,
+    img: successImg,
   },
 ];
 
@@ -69,43 +68,43 @@ const Workflow = () => {
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step) => {
-            const Icon = step.icon;
-
-            return (
-              <div
-                key={step.id}
-                className="group bg-gray-50 rounded-xl p-6 text-center
+          {steps.map((step) => (
+            <div
+              key={step.id}
+              className="group bg-gray-50 rounded-xl p-6 text-center
                   border border-gray-200
                   transition-all duration-300
                   hover:border-blue-500 hover:shadow-2xl hover:-translate-y-2"
-              >
-                {/* Icon */}
-                <div className="bg-blue-500 text-white p-4 rounded-xl inline-block mb-4">
-                  <Icon className="h-6 w-6" />
-                </div>
+            >
+              {/* Image Icon */}
+              <div className="inline-block mb-4">
+                <img
+                  src={step.img}
+                  alt={step.title}
+                  className="w-24 h-24 mx-auto rounded-xl object-cover"
+                />
+              </div>
 
-                {/* Step number */}
-                <div
-                  className="w-8 h-8 flex items-center justify-center rounded-full mx-auto mb-2
+              {/* Step number */}
+              <div
+                className="w-8 h-8 flex items-center justify-center rounded-full mx-auto mb-2
                     bg-gray-200 text-gray-800 text-sm
                     transition-all duration-300
                     group-hover:bg-blue-500 group-hover:text-white"
-                >
-                  {step.id}
-                </div>
-
-                {/* Title */}
-                <h3 className="font-semibold text-gray-800 mb-2">{step.title}</h3>
-
-                {/* Duration */}
-                <p className="text-blue-500 text-sm mb-2">{step.duration}</p>
-
-                {/* Description */}
-                <p className="text-gray-500 text-sm">{step.description}</p>
+              >
+                {step.id}
               </div>
-            );
-          })}
+
+              {/* Title */}
+              <h3 className="font-semibold text-gray-800 mb-2">{step.title}</h3>
+
+              {/* Duration */}
+              <p className="text-blue-500 text-sm mb-2">{step.duration}</p>
+
+              {/* Description */}
+              <p className="text-gray-500 text-sm">{step.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
