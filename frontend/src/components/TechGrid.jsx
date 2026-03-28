@@ -26,13 +26,37 @@ const TechCard = ({ title, description, iconPath }) => (
 // Tech Grid Section
 const TechGrid = () => {
   const modules = [
-    { title: "Core Python Mastery", description: "Mastering Python syntax, OOPS, decorators, and generators for building efficient applications.", iconPath: "M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 7H20v10H6.5a2.5 2.5 0 0 1 0 5H20" },
-    { title: "Django & REST APIs", description: "Building enterprise-grade backends with Django, REST Framework, and secure API architecture.", iconPath: "M2 20h20M5 20V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12M9 20v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4" },
-    { title: "Frontend Integration", description: "Connecting your Python backend with modern React interfaces and seamless state management.", iconPath: "M16 18l6-6-6-6M8 6l-6 6 6 6" },
-    { title: "Data Science & AI", description: "Leveraging Python's ecosystem with NumPy, Pandas, and Scikit-Learn for intelligent data solutions.", iconPath: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 3" },
-    { title: "Automation & Scripting", description: "Writing powerful scripts for web scraping, Task Automation, and system monitoring.", iconPath: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" },
-    { title: "Cloud & DevOps", description: "Deploying Python apps on AWS/Heroku, containerization with Docker, and CI/CD pipelines.", iconPath: "M13 2L3 14h9l-1 8 10-12h-9l1-8z" }
-  ];
+  { 
+    title: "Data Analysis & Visualization", 
+    description: "Exploring data using Pandas, NumPy, and creating impactful visualizations with Matplotlib & Seaborn.", 
+    iconPath: "M3 3v18h18M7 14l3-3 3 2 4-5" 
+  },
+  { 
+    title: "Machine Learning", 
+    description: "Building predictive models with Scikit-Learn, covering regression, classification, and clustering techniques.", 
+    iconPath: "M12 20v-6M6 20V10M18 20V4" 
+  },
+  { 
+    title: "Deep Learning", 
+    description: "Designing neural networks using TensorFlow and Keras for image, text, and pattern recognition tasks.", 
+    iconPath: "M4 12h4l2 5 4-10 2 5h4" 
+  },
+  { 
+    title: "Data Engineering", 
+    description: "Handling large-scale data pipelines, ETL processes, and working with SQL, Spark, and big data tools.", 
+    iconPath: "M3 6h18M3 12h18M3 18h18" 
+  },
+  { 
+    title: "AI Applications", 
+    description: "Applying AI in real-world use cases like recommendation systems, NLP, and computer vision solutions.", 
+    iconPath: "M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4zM6 10h12v10H6z" 
+  },
+  { 
+    title: "Model Deployment & MLOps", 
+    description: "Deploying ML models using Flask, Docker, and managing workflows with CI/CD and cloud platforms.", 
+    iconPath: "M5 12h14M12 5l7 7-7 7" 
+  }
+];
 
   return (
     <section id="projects" className="py-24 bg-[#eaf4f8]">

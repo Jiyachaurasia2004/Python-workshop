@@ -10,65 +10,75 @@ import {
 const steps = [
   {
     id: 1,
-    title: "Requirements Analysis",
-    duration: "2 days",
-    description: "Define project scope and features",
+    title: "Fundamentals & Core Python",
+    duration: "5-6 weeks",
+    description:
+      "Learn Python basics (loops, functions, OOP), focus on logic building, and practice 300+ problems",
     icon: ClipboardDocumentIcon,
   },
   {
     id: 2,
-    title: "System Architecture",
-    duration: "3 days",
-    description: "Design database and API structure",
+    title: "Advanced Python + Analysis Libraries",
+    duration: "3-4 weeks",
+    description:
+      "Work with NumPy, Pandas, Matplotlib, and Seaborn for data manipulation and visualization. Practice with CSV/Excel datasets and build 5+ projects",
     icon: BuildingOffice2Icon,
   },
   {
     id: 3,
-    title: "Backend Development",
-    duration: "2 weeks",
-    description: "Implement REST APIs and business logic",
+    title: "Database Knowledge",
+    duration: "4-5 weeks",
+    description:
+      "Learn SQL (SELECT, JOIN, GROUP BY) and MongoDB (NoSQL basics). Understand data storage and retrieval concepts",
     icon: Cog6ToothIcon,
   },
   {
     id: 4,
-    title: "Frontend Development",
-    duration: "2 weeks",
-    description: "Build responsive user interfaces",
+    title: "Data Analysis Tools",
+    duration: "5-6 weeks",
+    description:
+      "Use Power BI (dashboards, DAX, 5+ projects) and Advanced Excel (pivot tables, charts, formulas) for analysis",
     icon: PaintBrushIcon,
   },
   {
     id: 5,
-    title: "Testing & Deployment",
-    duration: "1 week",
-    description: "Deploy to production with CI/CD",
+    title: "Data Science & Machine Learning",
+    duration: "5-6 weeks",
+    description:
+      "Learn supervised and unsupervised learning using Scikit-learn. Cover regression, classification, clustering, and model evaluation (Accuracy, MSE). Build 5+ projects",
     icon: RocketLaunchIcon,
+  },
+  {
+    id: 6,
+    title: "Final Outcome",
+    duration: "—",
+    description:
+      "Achieve end-to-end understanding of data science. Ability to analyze data, build ML models, and create dashboards",
+    icon: ClipboardDocumentIcon,
   },
 ];
 
 const Workflow = () => {
   return (
     <div className="bg-blue-50 py-12 px-6">
-      
-      {/* Container slightly bigger */}
-      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-6xl mx-auto">
-
+      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-center text-2xl md:text-3xl font-bold text-blue-600 mb-8">
           🔄 Development Workflow
         </h2>
 
         {/* Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step) => {
             const Icon = step.icon;
 
             return (
               <div
                 key={step.id}
-                className="group bg-gray-50 rounded-xl p-5 text-center 
-                border border-gray-200
-                transition-all duration-300 
-                hover:border-blue-500 hover:shadow-2xl hover:-translate-y-2"
+                className="group bg-gray-50 rounded-xl p-6 text-center
+                  border border-gray-200
+                  transition-all duration-300
+                  hover:border-blue-500 hover:shadow-2xl hover:-translate-y-2"
               >
                 {/* Icon */}
                 <div className="bg-blue-500 text-white p-4 rounded-xl inline-block mb-4">
@@ -77,33 +87,26 @@ const Workflow = () => {
 
                 {/* Step number */}
                 <div
-                  className="w-8 h-8 flex items-center justify-center rounded-full mx-auto mb-2 
-                  bg-gray-200 text-gray-800 text-sm
-                  transition-all duration-300 
-                  group-hover:bg-blue-500 group-hover:text-white"
+                  className="w-8 h-8 flex items-center justify-center rounded-full mx-auto mb-2
+                    bg-gray-200 text-gray-800 text-sm
+                    transition-all duration-300
+                    group-hover:bg-blue-500 group-hover:text-white"
                 >
                   {step.id}
                 </div>
 
                 {/* Title */}
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {step.title}
-                </h3>
+                <h3 className="font-semibold text-gray-800 mb-2">{step.title}</h3>
 
                 {/* Duration */}
-                <p className="text-blue-500 text-sm mb-2">
-                  {step.duration}
-                </p>
+                <p className="text-blue-500 text-sm mb-2">{step.duration}</p>
 
                 {/* Description */}
-                <p className="text-gray-500 text-sm">
-                  {step.description}
-                </p>
+                <p className="text-gray-500 text-sm">{step.description}</p>
               </div>
             );
           })}
         </div>
-
       </div>
     </div>
   );
