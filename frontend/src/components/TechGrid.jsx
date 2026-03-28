@@ -29,37 +29,37 @@ const TechGrid = () => {
     {
       id: 1,
       title: "Fundamentals & Core Python",
-      duration: "5-6 weeks",
+    
       iconPath: "M3 3v18h18M7 14l3-3 3 2 4-5",
     },
     {
       id: 2,
       title: "Advanced Python + Analysis Libraries",
-      duration: "3-4 weeks",
+   
       iconPath: "M12 20v-6M6 20V10M18 20V4",
     },
     {
       id: 3,
       title: "Database Knowledge",
-      duration: "4-5 weeks",
+   
       iconPath: "M4 12h4l2 5 4-10 2 5h4",
     },
     {
       id: 4,
       title: "Data Analysis Tools",
-      duration: "5-6 weeks",
+    
       iconPath: "M3 6h18M3 12h18M3 18h18",
     },
     {
       id: 5,
       title: "Data Science & Machine Learning",
-      duration: "5-6 weeks",
+   
       iconPath: "M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4zM6 10h12v10H6z",
     },
     {
       id: 6,
       title: "Final Outcome",
-      duration: "—",
+     
       iconPath: "M5 12h14M12 5l7 7-7 7",
     },
   ];

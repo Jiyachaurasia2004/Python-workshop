@@ -2,13 +2,14 @@ import React from "react";
 import { FaPython, FaDatabase, FaChartBar } from "react-icons/fa";
 import { SiScikitlearn } from "react-icons/si";
 import imge from "../assets/data.jpeg";
-import machine from "../assets/data.jpeg"; // Image for Machine Learning card
+import machine from "../assets/data.jpeg";
+import interview from "../assets/png-clipart-job-interview-transparency-interview-text-logo.png";
 
 const Module = () => {
   const sections = [
     {
       title: "Core Python",
-      icon: <FaPython className="text-blue-500 text-2xl" />,
+      icon: <FaPython className="text-blue-500 text-3xl" />,
       border: "border-blue-500",
       bg: "bg-blue-50",
       items: [
@@ -25,7 +26,7 @@ const Module = () => {
     },
     {
       title: "Data Analysis and Visualization",
-      icon: <FaChartBar className="text-indigo-500 text-2xl" />,
+      icon: <FaChartBar className="text-indigo-500 text-3xl" />,
       border: "border-indigo-500",
       bg: "bg-indigo-50",
       items: [
@@ -40,21 +41,39 @@ const Module = () => {
     },
     {
       title: "Database",
-      icon: <FaDatabase className="text-green-600 text-2xl" />,
+      icon: <FaDatabase className="text-green-600 text-3xl" />,
       border: "border-green-500",
       bg: "bg-green-50",
-      items: ["MongoDB", "SQL"],
+      items: [
+        "MongoDB",
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "NoSQL Basics",
+        "Database Design",
+        "Indexing",
+        "Query Optimization",
+      ],
     },
     {
       title: "Tools for Visualization and Analysis",
-      icon: <SiScikitlearn className="text-yellow-500 text-2xl" />,
+      icon: <SiScikitlearn className="text-yellow-500 text-3xl" />,
       border: "border-yellow-500",
       bg: "bg-yellow-50",
-      items: ["Excel", "Power BI"],
+      items: [
+        "Excel",
+        "Power BI",
+        "Tableau",
+        "Google Data Studio",
+        "Pivot Tables",
+        "DAX",
+        "Data Cleaning",
+        "Dashboard Design",
+      ],
     },
     {
       title: "Machine Learning",
-      img: machine, // Image instead of icon
+      img: machine,
       border: "border-purple-500",
       bg: "bg-purple-50",
       items: [
@@ -63,6 +82,19 @@ const Module = () => {
         "Reinforcement Learning",
         "Evaluation Metrics",
         "Hyperparameter Tuning",
+      ],
+    },
+    {
+      title: "Interview Preparation",
+      img: interview,
+      border: "border-purple-500",
+      bg: "bg-purple-50",
+      items: [
+        "Resume Writing",
+        "LinkedIn Profile Optimization",
+        "Mock Interview (One to One)",
+        "HR Interview Preparation",
+        "Technical Interview Questions",
       ],
     },
   ];
@@ -82,7 +114,8 @@ const Module = () => {
       </h1>
 
       <p className="text-center text-gray-600 mb-10">
-        Complete roadmap from basics to advanced Python, including data analysis, machine learning, visualization, and real-world data science tools.
+        Complete roadmap from basics to advanced Python, including data analysis,
+        machine learning, visualization, and real-world data science tools.
       </p>
 
       {/* Cards */}
@@ -90,12 +123,16 @@ const Module = () => {
         {sections.map((sec, index) => (
           <div
             key={index}
-            className={`${sec.bg} border-2 ${sec.border} rounded-xl p-6 text-center hover:shadow-lg transition`}
+            className={`${sec.bg} border-2 ${sec.border} rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300`}
           >
             {/* Icon or Image */}
-            <div className="bg-white w-14 h-14 flex items-center justify-center rounded-xl mx-auto mb-4 shadow">
+            <div className="bg-white w-20 h-20 flex items-center justify-center rounded-2xl mx-auto mb-4 shadow-md transition-transform duration-300 hover:scale-110">
               {sec.img ? (
-                <img src={sec.img} alt={sec.title} className="w-10 h-10 object-contain" />
+                <img
+                  src={sec.img}
+                  alt={sec.title}
+                  className="w-12 h-12 object-contain"
+                />
               ) : (
                 sec.icon
               )}
@@ -123,14 +160,17 @@ const Module = () => {
       <div className="bg-[#eef6fb] py-16 px-6">
         <div className="max-w-6xl mx-auto border border-blue-200 rounded-2xl p-8 md:p-12 shadow-sm bg-white/60 backdrop-blur">
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            {/* LEFT CONTENT */}
+            {/* LEFT */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                 Ready to Start Your Data Science Journey?
               </h2>
 
               <p className="text-gray-600 mb-6">
-                Join our complete Python and Data Science roadmap and build strong fundamentals from basics to advanced topics like data analysis, machine learning, visualization, and real-world data science projects.
+                Join our complete Python and Data Science roadmap and build
+                strong fundamentals from basics to advanced topics like data
+                analysis, machine learning, visualization, and real-world data
+                science projects.
               </p>
 
               <a
@@ -160,7 +200,7 @@ const Module = () => {
             <p className="text-gray-600 text-sm">
               <span className="text-blue-600 font-semibold">Note:</span> Designed
               for beginners & intermediates. No prior programming experience
-              required to start learning Data Science.
+              required.
             </p>
           </div>
         </div>
